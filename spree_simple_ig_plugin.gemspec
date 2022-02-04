@@ -24,6 +24,8 @@ Gem::Specification.new do |s|
   s.add_dependency 'spree', '>= 4.3.0'
   s.add_dependency 'spree_backend' # uncomment to include Admin Panel changes
   s.add_dependency 'spree_extension'
+  s.add_dependency 'spree_frontend', '>= 4.3.1 '
+
 
   s.add_development_dependency 'spree_dev_tools'
   s.add_dependency 'deface', '~> 1.0'
