@@ -27,9 +27,13 @@ module Spree
             end
 
             def catalog
-                @products = ["hello", "world"]  
-                @nones = @collection
-                # respond_with(@products)
+                @products = ["hello", "world"]
+                
+            end
+
+            # Overrides the default spree method to include @collection in catalog action
+            def collection_actions
+                [:index, :catalog]
             end
         end
     end

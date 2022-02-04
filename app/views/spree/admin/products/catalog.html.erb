@@ -1,5 +1,8 @@
-<h2><%= @nones%></h2>
-
 <% @products.each do |item| %>
     <h2><%= item%></h2>
+<% end %>
+
+<% @collection.each do |product| %>
+    <h2><%= product.name %></h2>
+    <h2><%= product.price %></h2>
 <% end %>
